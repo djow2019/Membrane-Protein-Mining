@@ -1,21 +1,25 @@
 # open the data file
 file = open("data.tab", "r")
 
-# each entry is separated by a tab
-unparsed = file.read().split("	")
-
-# now close the file
-file.close()
-
 #The IDs start at index 2 every other element
-ids = unparsed[2::2]
+ids = ["UniProtId"]
+types = ["Type"]
+annotations = ["Annotation"]
 
-#list for types and annotations to filter out
-types = []
-annotations = []
+#skip the first line
+file.readline()
 
-# sort through the type/annotation mix
-for entry in unparsed[3::2]:
+# loop through each line skipping header
+for line in file:
+
+  # each entry is separated by a tab
+  entries = line.split("	")
+
+  # ID is first
+  ids.append(entries[0]);
+
+  # second part is the mixed content
+  entry = entries[1]
 
   # Check for single, multi, beta or other
   if entry.find("Single-pass") != -1:
@@ -33,13 +37,12 @@ for entry in unparsed[3::2]:
   else:
     annotations.append("None")
 
+# now close the reader
+file.close()
+
 # now open the file to write
 with open("formatted.tab", "w") as output:
     
-  # write the header
-  header = ["UniProtID", "Type", "Annotation\n"]
-  output.write("	".join(header))
-
   # now loop through all the data
   for a, b, c in zip(ids, types, annotations):
       
