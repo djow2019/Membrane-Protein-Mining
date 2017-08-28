@@ -1,5 +1,10 @@
-# import the panda library
+# import the panda, request, and io library
 import pandas as pd
+import requests
+import io
+
+# get the data from uni prot
+r = requests.get("http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Atransmem)%20AND%20(organism%3A%22Homo%20sapiens%20(Human)%20%5B9606%5D%22%20OR%20organism%3A%22Mus%20musculus%20(Mouse)%20%5B10090%5D%22)&sort=score&columns=id%2Ccomment(SUBCELLULAR%20LOCATION)&format=tab")
 
 # Simple expression to find annotation data
 def findAnnotation(text):
@@ -24,7 +29,7 @@ def findType(entry):
     return "Data unknown"
 
 # read in the table data and set column names
-data = pd.read_table("data.tab", header=0, names = ["UniProtId", "Subcellular"])
+data = pd.read_table(io.StringIO(r.text), header=0, names = ["UniProtId", "Subcellular"])
 
 # Add the type column
 data["Type"] = data["Subcellular"].apply(lambda x: findType(x))
