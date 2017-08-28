@@ -1,50 +1,39 @@
-# open the data file
-file = open("data.tab", "r")
+# import the panda library
+import pandas as pd
 
-#The IDs start at index 2 every other element
-ids = ["UniProtId"]
-types = ["Type"]
-annotations = ["Annotation"]
+# Simple expression to find annotation data
+def findAnnotation(text):
+  text = str(text)
+  # Now check for an annotation dictionary
+  if text.find("{") != -1:
+    return text[text.find("{") + 1: text.find("}")]
+  else:
+    return "None"
 
-#skip the first line
-file.readline()
-
-# loop through each line skipping header
-for line in file:
-
-  # each entry is separated by a tab
-  entries = line.split("	")
-
-  # ID is first
-  ids.append(entries[0]);
-
-  # second part is the mixed content
-  entry = entries[1]
-
+# expression to check for the type of protein
+def findType(entry):
+  entry = str(entry)
   # Check for single, multi, beta or other
   if entry.find("Single-pass") != -1:
-    types.append("Single-pass membrane protein")
+    return "Single-pass membrane protein"
   elif entry.find("Multi-pass") != -1:
-    types.append("Multi-pass membrane protein")
+    return "Multi-pass membrane protein"
   elif entry.find("Beta-barrel") != -1:
-    types.append("Beta-barrel membrane protein")
+    return "Beta-barrel membrane protein"
   else:
-    types.append("Data unknown")
+    return "Data unknown"
 
-  # Now check for an annotation dictionary
-  if entry.find("{") != -1:
-    annotations.append(entry[entry.find("{") + 1: entry.find("}")])
-  else:
-    annotations.append("None")
+# read in the table data and set column names
+data = pd.read_table("data.tab", header=0, names = ["UniProtId", "Subcellular"])
 
-# now close the reader
-file.close()
+# Add the type column
+data["Type"] = data["Subcellular"].apply(lambda x: findType(x))
 
-# now open the file to write
-with open("formatted.tab", "w") as output:
-    
-  # now loop through all the data
-  for a, b, c in zip(ids, types, annotations):
-      
-    # write the line tab separated
-    output.write("	".join([a, b, c]) + "\n")
+# Add the annotation column
+data["Annotations"] = data["Subcellular"].apply(lambda x: findAnnotation(x))
+
+# now delete the subcellular column
+del data["Subcellular"]
+
+# now write the table to a file
+data.to_csv("formatted.tab", index=False, header=True, sep="	")
