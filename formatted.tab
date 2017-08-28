@@ -1,30 +1,4 @@
 UniProtId	Type	Annotations
-Q14524	Multi-pass membrane protein	ECO:0000269|PubMed:1309946, ECO:0000269|PubMed:19074138, ECO:0000269|PubMed:23085483, ECO:0000269|PubMed:26279430
-P00533	Single-pass membrane protein	None
-Q01705	Single-pass membrane protein	None
-P05067	Single-pass membrane protein	None
-P35498	Multi-pass membrane protein	ECO:0000269|PubMed:17928445
-P10417	Single-pass membrane protein	None
-P51787	Multi-pass membrane protein	ECO:0000269|PubMed:10646604, ECO:0000269|PubMed:18165683, ECO:0000269|PubMed:21228319, ECO:0000269|PubMed:22024150, ECO:0000269|PubMed:25037568
-P49768	Multi-pass membrane protein	ECO:0000269|PubMed:10593990, ECO:0000269|PubMed:8574969, ECO:0000269|PubMed:9738936, ECO:0000305|PubMed:10037471, ECO:0000305|PubMed:15274632
-Q12809	Multi-pass membrane protein	ECO:0000269|PubMed:18559421, ECO:0000269|PubMed:19412172, ECO:0000269|PubMed:26363003
-P13569	Multi-pass membrane protein	ECO:0000269|PubMed:12519745, ECO:0000269|PubMed:12529365, ECO:0000269|PubMed:1284548, ECO:0000269|PubMed:15247260, ECO:0000269|PubMed:15716351, ECO:0000269|PubMed:17462998, ECO:0000269|PubMed:19398555, ECO:0000269|PubMed:19621064, ECO:0000269|PubMed:20008117, ECO:0000269|PubMed:22207244
-P21802	Single-pass membrane protein	None
-P35670	Multi-pass membrane protein	ECO:0000269|PubMed:17919502, ECO:0000269|PubMed:22240481, ECO:0000269|PubMed:24706876
-P11362	Single-pass membrane protein	None
-P49769	Multi-pass membrane protein	ECO:0000250|UniProtKB:P49768
-P01130	Single-pass membrane protein	ECO:0000269|PubMed:17461796, ECO:0000269|PubMed:19520913
-P21803	Single-pass membrane protein	ECO:0000250
-P04626	Single-pass membrane protein	None
-P01375	Single-pass membrane protein	ECO:0000269|PubMed:16829952
-P10721	Single-pass membrane protein	None
-Q13563	Multi-pass membrane protein	ECO:0000269|PubMed:18695040, ECO:0000269|PubMed:20881056, ECO:0000269|PubMed:27259053
-P07949	Single-pass membrane protein	ECO:0000269|PubMed:19823924
-Q07813	Single-pass membrane protein	ECO:0000250
-P12023	Single-pass membrane protein	ECO:0000269|PubMed:15677459
-P21817	Multi-pass membrane protein	ECO:0000269|PubMed:7556644
-P06804	Single-pass membrane protein	ECO:0000250
-P06213	Single-pass membrane protein	None
 P34968	Multi-pass membrane protein	None
 P29275	Multi-pass membrane protein	None
 Q8K440	Multi-pass membrane protein	ECO:0000250
@@ -228,6 +202,7 @@ P28566	Multi-pass membrane protein	ECO:0000269|PubMed:14744596, ECO:0000269|PubM
 P28223	Multi-pass membrane protein	ECO:0000269|PubMed:28129538
 Q9JHJ5	Multi-pass membrane protein	ECO:0000250
 U3KPV4	Single-pass membrane protein	ECO:0000250|UniProtKB:A0A4Z3
+P05067	Single-pass membrane protein	None
 P30542	Multi-pass membrane protein	ECO:0000269|PubMed:27134041
 Q60613	Multi-pass membrane protein	None
 P0DMS8	Multi-pass membrane protein	None
@@ -279,6 +254,7 @@ P30939	Multi-pass membrane protein	ECO:0000269|PubMed:8380639, ECO:0000269|PubMe
 P28335	Multi-pass membrane protein	ECO:0000269|PubMed:12970106, ECO:0000269|PubMed:18703043, ECO:0000269|PubMed:19057895, ECO:0000269|PubMed:7895773
 P34969	Multi-pass membrane protein	None
 Q9NPC4	Single-pass membrane protein	ECO:0000305
+P12023	Single-pass membrane protein	ECO:0000269|PubMed:15677459
 Q99P81	Multi-pass membrane protein	ECO:0000305
 Q99LR1	Single-pass membrane protein	ECO:0000269|PubMed:18096503
 Q9Z1Q2	Multi-pass membrane protein	ECO:0000305
@@ -815,6 +791,7 @@ Q766D5	Single-pass membrane protein	ECO:0000250
 P56817	Single-pass membrane protein	ECO:0000250|UniProtKB:P56818
 P18572	Single-pass membrane protein	ECO:0000269|PubMed:12601063
 Q9QXA6	Multi-pass membrane protein	ECO:0000305|PubMed:12167606
+Q07813	Single-pass membrane protein	ECO:0000250
 P78348	Multi-pass membrane protein	ECO:0000269|PubMed:12578970, ECO:0000269|PubMed:21036899, ECO:0000269|PubMed:22760635
 Q7TNS7	Multi-pass membrane protein	ECO:0000250
 Q9R0Y1	Multi-pass membrane protein	ECO:0000250
@@ -822,6 +799,7 @@ Q6ICH7	Single-pass membrane protein	ECO:0000305
 P18850	Single-pass membrane protein	None
 P20648	Multi-pass membrane protein	None
 P50992	Single-pass membrane protein	None
+P35670	Multi-pass membrane protein	ECO:0000269|PubMed:17919502, ECO:0000269|PubMed:22240481, ECO:0000269|PubMed:24706876
 O35451	Single-pass membrane protein	ECO:0000250
 Q6DD88	Multi-pass membrane protein	ECO:0000269|PubMed:18270207, ECO:0000269|PubMed:24459106
 Q04646	Single-pass membrane protein	ECO:0000305
@@ -886,6 +864,7 @@ Q9JJ04	Single-pass membrane protein	ECO:0000250
 O08734	Single-pass membrane protein	ECO:0000305
 Q9D0L6	Single-pass membrane protein	ECO:0000305
 P50895	Single-pass membrane protein	None
+P10417	Single-pass membrane protein	None
 Q9CZP5	Single-pass membrane protein	ECO:0000250
 Q3B7T3	Single-pass membrane protein	ECO:0000305
 Q8R079	Multi-pass membrane protein	ECO:0000250
@@ -1426,6 +1405,7 @@ Q8TDX6	Single-pass membrane protein	ECO:0000305|PubMed:11788602
 O75871	Single-pass membrane protein	None
 P27545	Multi-pass membrane protein	ECO:0000250
 Q8C172	Multi-pass membrane protein	ECO:0000255|PROSITE-ProRule:PRU00108
+P13569	Multi-pass membrane protein	ECO:0000269|PubMed:12519745, ECO:0000269|PubMed:12529365, ECO:0000269|PubMed:1284548, ECO:0000269|PubMed:15247260, ECO:0000269|PubMed:15716351, ECO:0000269|PubMed:17462998, ECO:0000269|PubMed:19398555, ECO:0000269|PubMed:19621064, ECO:0000269|PubMed:20008117, ECO:0000269|PubMed:22207244
 Q8NI28	Single-pass membrane protein	ECO:0000305
 Q9CXM0	Single-pass membrane protein	ECO:0000305
 Q5DTK1	Single-pass membrane protein	ECO:0000305
@@ -2309,6 +2289,7 @@ O95672	Single-pass membrane protein	ECO:0000250
 P42892	Single-pass membrane protein	None
 Q3TZW0	Single-pass membrane protein	ECO:0000250
 O35393	Single-pass membrane protein	None
+P00533	Single-pass membrane protein	None
 Q8R2Y3	Multi-pass membrane protein	ECO:0000250|UniProtKB:Q9UPQ8
 Q86YN1	Multi-pass membrane protein	ECO:0000250
 Q3TNW5	Single-pass membrane protein	ECO:0000305
@@ -2523,6 +2504,7 @@ Q8R1C0	Multi-pass membrane protein	None
 A2BDX4	Multi-pass membrane protein	ECO:0000250|UniProtKB:D4AD53
 Q8TAE7	Multi-pass membrane protein	ECO:0000269|PubMed:11852086, ECO:0000269|PubMed:12060745, ECO:0000269|PubMed:19074135
 Q60603	Multi-pass membrane protein	ECO:0000269|PubMed:19671703, ECO:0000269|PubMed:23975098
+Q12809	Multi-pass membrane protein	ECO:0000269|PubMed:18559421, ECO:0000269|PubMed:19412172, ECO:0000269|PubMed:26363003
 Q9ER47	Multi-pass membrane protein	None
 Q96L42	Multi-pass membrane protein	None
 P48048	Multi-pass membrane protein	ECO:0000269|PubMed:12684516
@@ -2614,6 +2596,7 @@ O14649	Multi-pass membrane protein	ECO:0000269|PubMed:23169818
 Q9Y257	Multi-pass membrane protein	ECO:0000305
 Q9EQR3	Multi-pass membrane protein	None
 P58390	Multi-pass membrane protein	None
+P51787	Multi-pass membrane protein	ECO:0000269|PubMed:10646604, ECO:0000269|PubMed:18165683, ECO:0000269|PubMed:21228319, ECO:0000269|PubMed:22024150, ECO:0000269|PubMed:25037568
 A8MYU2	Multi-pass membrane protein	ECO:0000250
 Q8K177	Multi-pass membrane protein	None
 Q8JZN3	Multi-pass membrane protein	None
@@ -2637,6 +2620,7 @@ Q8BZN2	Multi-pass membrane protein	ECO:0000250
 Q06136	Multi-pass membrane protein	ECO:0000269|PubMed:15328338
 Q9EQF2	Single-pass membrane protein	ECO:0000250
 Q6UWL6	Single-pass membrane protein	ECO:0000305
+P10721	Single-pass membrane protein	None
 Q5VTJ3	Single-pass membrane protein	ECO:0000305
 Q3UM83	Single-pass membrane protein	ECO:0000305
 Q9CR58	Multi-pass membrane protein	ECO:0000269|PubMed:15809292
@@ -2734,6 +2718,7 @@ P54763	Single-pass membrane protein	None
 P54760	Single-pass membrane protein	ECO:0000269|PubMed:8188704
 P14753	Single-pass membrane protein	None
 Q80TA1	Multi-pass membrane protein	ECO:0000305
+P04626	Single-pass membrane protein	None
 Q15303	Single-pass membrane protein	ECO:0000269|PubMed:10348342, ECO:0000269|PubMed:12807903, ECO:0000269|PubMed:15534001, ECO:0000269|PubMed:16251361, ECO:0000269|PubMed:16778220, ECO:0000269|PubMed:16837552, ECO:0000269|PubMed:17486069, ECO:0000269|PubMed:17638867, ECO:0000269|PubMed:19193720, ECO:0000269|PubMed:20858735, ECO:0000269|PubMed:8383326, ECO:0000269|PubMed:9334263
 O76062	Multi-pass membrane protein	ECO:0000250
 Q6DYE8	Single-pass membrane protein	ECO:0000305
@@ -2884,6 +2869,7 @@ Q3UMF9	Single-pass membrane protein	ECO:0000305
 P06734	Single-pass membrane protein	None
 P31994	Single-pass membrane protein	None
 P55899	Single-pass membrane protein	ECO:0000250|UniProtKB:P13599
+P11362	Single-pass membrane protein	None
 Q7TNV1	Multi-pass membrane protein	ECO:0000269|PubMed:23275342
 O00519	Single-pass membrane protein	ECO:0000269|PubMed:17015445
 Q9Y256	Multi-pass membrane protein	ECO:0000269|PubMed:19188362
@@ -2937,6 +2923,7 @@ Q96LA6	Single-pass membrane protein	ECO:0000269|PubMed:15479727, ECO:0000269|Pub
 Q96PJ5	Single-pass membrane protein	ECO:0000269|PubMed:16157685, ECO:0000269|PubMed:16849395
 P53798	Multi-pass membrane protein	None
 P16092	Single-pass membrane protein	None
+P21803	Single-pass membrane protein	ECO:0000250
 Q03142	Single-pass membrane protein	ECO:0000269|PubMed:18186042
 Q9UBQ6	Single-pass membrane protein	ECO:0000250
 Q8CCS2	Multi-pass membrane protein	ECO:0000305
@@ -2992,6 +2979,7 @@ Q9D8B6	Multi-pass membrane protein	ECO:0000305
 A0A1B0GTK4	Single-pass membrane protein	ECO:0000255
 Q71RH2	Multi-pass membrane protein	ECO:0000250|UniProtKB:Q7TNV1
 Q8BQT2	Single-pass membrane protein	ECO:0000269|PubMed:21334309
+P21802	Single-pass membrane protein	None
 Q9NYL4	Single-pass membrane protein	ECO:0000305
 Q8R507	Single-pass membrane protein	ECO:0000269|PubMed:12471058
 Q9NZU1	Single-pass membrane protein	ECO:0000250|UniProtKB:Q6RKD8
@@ -4015,6 +4003,7 @@ P59773	Single-pass membrane protein	ECO:0000305
 A2AAE1	Single-pass membrane protein	ECO:0000305
 A8MWY0	Single-pass membrane protein	ECO:0000305
 Q91X21	Single-pass membrane protein	ECO:0000305
+P06213	Single-pass membrane protein	None
 Q61153	Single-pass membrane protein	ECO:0000250
 A2ASA8	Single-pass membrane protein	ECO:0000305
 Q9Y5U9	Multi-pass membrane protein	ECO:0000269|PubMed:15276200
@@ -4171,6 +4160,7 @@ Q13571	Multi-pass membrane protein	ECO:0000269|PubMed:8661146
 O95461	Single-pass membrane protein	ECO:0000269|PubMed:15661757, ECO:0000269|PubMed:15958417, ECO:0000269|PubMed:25279699
 Q9UHI5	Multi-pass membrane protein	None
 Q8CGA3	Multi-pass membrane protein	ECO:0000269|PubMed:15659399
+P01130	Single-pass membrane protein	ECO:0000269|PubMed:17461796, ECO:0000269|PubMed:19520913
 Q969X1	Multi-pass membrane protein	ECO:0000250
 A2ARI4	Multi-pass membrane protein	ECO:0000269|PubMed:21693646
 Q3UVD5	Multi-pass membrane protein	ECO:0000250
@@ -5704,6 +5694,7 @@ A6NL08	Multi-pass membrane protein	None
 Q6IF36	Multi-pass membrane protein	ECO:0000305
 Q8BZ39	Multi-pass membrane protein	None
 P69849	Single-pass membrane protein	ECO:0000305
+Q01705	Single-pass membrane protein	None
 Q672J9	Multi-pass membrane protein	ECO:0000305
 Q8BGN5	Multi-pass membrane protein	ECO:0000305
 Q9GZQ6	Multi-pass membrane protein	None
@@ -6302,6 +6293,7 @@ Q3V0I2	Single-pass membrane protein	ECO:0000305
 Q99946	Multi-pass membrane protein	ECO:0000250
 Q5FWE3	Multi-pass membrane protein	ECO:0000305
 Q6UWB4	Single-pass membrane protein	ECO:0000305
+P49769	Multi-pass membrane protein	ECO:0000250|UniProtKB:P49768
 Q8BHN0	Single-pass membrane protein	ECO:0000305
 C9JH25	Multi-pass membrane protein	ECO:0000305
 Q9D9M0	Single-pass membrane protein	ECO:0000305
@@ -6364,6 +6356,7 @@ P58872	Multi-pass membrane protein	ECO:0000305
 Q02161	Multi-pass membrane protein	None
 O75787	Single-pass membrane protein	ECO:0000305
 Q86VR2	Multi-pass membrane protein	ECO:0000305
+P07949	Single-pass membrane protein	ECO:0000269|PubMed:19823924
 Q9H310	Multi-pass membrane protein	None
 P58873	Multi-pass membrane protein	ECO:0000305
 Q8BHC7	Multi-pass membrane protein	ECO:0000305
@@ -6389,6 +6382,7 @@ Q9Z2B3	Multi-pass membrane protein	None
 Q8VEK2	Multi-pass membrane protein	ECO:0000269|PubMed:23386608
 Q8CF94	Multi-pass membrane protein	ECO:0000250
 Q9NZM6	Multi-pass membrane protein	ECO:0000305
+Q13563	Multi-pass membrane protein	ECO:0000269|PubMed:18695040, ECO:0000269|PubMed:20881056, ECO:0000269|PubMed:27259053
 Q9HBL7	Multi-pass membrane protein	ECO:0000269|PubMed:21940822
 Q9DCW2	Single-pass membrane protein	ECO:0000250
 Q9UIW2	Single-pass membrane protein	ECO:0000305
@@ -6616,6 +6610,7 @@ Q02127	Single-pass membrane protein	ECO:0000269|PubMed:10727948
 O35435	Single-pass membrane protein	ECO:0000250
 Q3TMX7	Single-pass membrane protein	ECO:0000250
 Q9BQI7	Single-pass membrane protein	ECO:0000250|UniProtKB:Q6P1I6
+P49768	Multi-pass membrane protein	ECO:0000269|PubMed:10593990, ECO:0000269|PubMed:8574969, ECO:0000269|PubMed:9738936, ECO:0000305|PubMed:10037471, ECO:0000305|PubMed:15274632
 Q16647	Single-pass membrane protein	ECO:0000250|UniProtKB:Q29626
 Q91V95	Multi-pass membrane protein	None
 P80560	Single-pass membrane protein	ECO:0000269|PubMed:19361477
@@ -6953,6 +6948,7 @@ Q12770	Multi-pass membrane protein	ECO:0000250
 Q6ZMJ2	Single-pass membrane protein	ECO:0000255|HAMAP-Rule:MF_03070
 Q6T707	Multi-pass membrane protein	ECO:0000250|UniProtKB:O00767
 Q86SK9	Multi-pass membrane protein	ECO:0000269|PubMed:15907797
+P35498	Multi-pass membrane protein	ECO:0000269|PubMed:17928445
 Q7M729	Single-pass membrane protein	ECO:0000250
 Q9WTU3	Multi-pass membrane protein	ECO:0000269|PubMed:19136557
 Q62205	Multi-pass membrane protein	ECO:0000269|PubMed:15123669
@@ -7151,6 +7147,7 @@ P31650	Multi-pass membrane protein	None
 Q9HBV2	Single-pass membrane protein	ECO:0000305
 Q9D9X8	Single-pass membrane protein	ECO:0000305|PubMed:15982649
 Q01887	Single-pass membrane protein	ECO:0000269|PubMed:19000841
+P21817	Multi-pass membrane protein	ECO:0000269|PubMed:7556644
 Q9ES07	Multi-pass membrane protein	None
 Q5NCM1	Multi-pass membrane protein	ECO:0000250
 Q9NRA2	Multi-pass membrane protein	ECO:0000269|PubMed:22778404
@@ -7399,6 +7396,7 @@ Q01959	Multi-pass membrane protein	ECO:0000269|PubMed:1406597, ECO:0000269|PubMe
 Q761V0	Multi-pass membrane protein	ECO:0000250|UniProtKB:P58295
 P21583	Single-pass membrane protein	ECO:0000269|PubMed:26522471
 P35499	Multi-pass membrane protein	ECO:0000269|PubMed:15318338, ECO:0000269|PubMed:16890191
+Q14524	Multi-pass membrane protein	ECO:0000269|PubMed:1309946, ECO:0000269|PubMed:19074138, ECO:0000269|PubMed:23085483, ECO:0000269|PubMed:26279430
 Q5TEA6	Single-pass membrane protein	None
 Q12981	Single-pass membrane protein	None
 Q9UGP8	Multi-pass membrane protein	None
@@ -8459,6 +8457,7 @@ Q9BTV4	Multi-pass membrane protein	ECO:0000250
 Q8BXJ9	Multi-pass membrane protein	ECO:0000305
 Q6PI78	Multi-pass membrane protein	ECO:0000269|PubMed:26403541
 O95150	Single-pass membrane protein	ECO:0000305|PubMed:11911831, ECO:0000305|PubMed:11923219
+P06804	Single-pass membrane protein	ECO:0000250
 P41155	Single-pass membrane protein	ECO:0000305
 P43488	Single-pass membrane protein	None
 O88472	Single-pass membrane protein	ECO:0000305
@@ -8525,6 +8524,7 @@ Q7Z410	Single-pass membrane protein	ECO:0000269|PubMed:12886014
 Q3V0Q7	Single-pass membrane protein	ECO:0000305
 Q96JJ7	Single-pass membrane protein	ECO:0000269|PubMed:15623505
 Q9WU72	Single-pass membrane protein	None
+P01375	Single-pass membrane protein	ECO:0000269|PubMed:16829952
 Q8C3S2	Single-pass membrane protein	ECO:0000305
 Q9NP84	Single-pass membrane protein	None
 Q9HAV5	Single-pass membrane protein	None

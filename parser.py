@@ -3,8 +3,17 @@ import pandas as pd
 import requests
 import io
 
+# construct the query data
+query = {
+
+  "query": "annotation:(type:transmem) (organism:\"Homo sapiens (Human) [9606]\" OR organism:\"Mus musculus (Mouse) [10090]\")",
+  "columns":"id,comment(SUBCELLULAR LOCATION)",
+  "format": "tab"
+
+}
+
 # get the data from uni prot
-r = requests.get("http://www.uniprot.org/uniprot/?query=annotation%3A(type%3Atransmem)%20AND%20(organism%3A%22Homo%20sapiens%20(Human)%20%5B9606%5D%22%20OR%20organism%3A%22Mus%20musculus%20(Mouse)%20%5B10090%5D%22)&sort=score&columns=id%2Ccomment(SUBCELLULAR%20LOCATION)&format=tab")
+r = requests.get("http://www.uniprot.org/uniprot/", params = query)
 
 # Simple expression to find annotation data
 def findAnnotation(text):
