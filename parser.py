@@ -46,8 +46,5 @@ data["Type"] = data["Subcellular"].apply(lambda x: findType(x))
 # Add the annotation column
 data["Annotations"] = data["Subcellular"].apply(lambda x: findAnnotation(x))
 
-# now delete the subcellular column
-del data["Subcellular"]
-
 # now write the table to a file
 data.to_csv("formatted.tab", index=False, header=True, sep="	")
