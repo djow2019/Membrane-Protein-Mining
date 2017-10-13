@@ -1,7 +1,8 @@
-# import the panda, request, and io library
+# import the panda, request, io, and mygene libraries
 import pandas as pd
 import requests
 import io
+import mygene
 
 # construct the query data
 query = {
@@ -48,6 +49,14 @@ data["Annotations"] = data["Subcellular"].apply(lambda x: findAnnotation(x))
 
 # now delete the subcellular column
 del data["Subcellular"]
+
+# now use mygene to add additional IDs
+mg = mygene.MyGeneInfo()
+out = mg.querymany(data["UniProtId"], scopes='uniprot', fields='entrezgene,ensembl.gene,refseq,symbol')
+data["EntrezID"] = pd.Series(map(lambda d: d.get('entrezgene', 'Not Found'), out))
+data["EnsembleID"] = pd.Series(map(lambda d: d.get('ensembl', 'Not Found'), out))
+data["RefSeqID"] = pd.Series(map(lambda d: d.get('refseq', 'Not Found'), out))
+data["Symbol"] = pd.Series(map(lambda d: d.get('symbol', 'Not Found'), out))
 
 # now write the table to a file
 data.to_csv("formatted.tab", index=False, header=True, sep="	")
