@@ -61,7 +61,7 @@ data["Annotations"] = data["Reference"].apply(lambda x: findAnnotation(x))
 
 # now use mygene to add additional IDs
 mg = mygene.MyGeneInfo()
-out = mg.querymany(data["UniProtId"], scopes='uniprot', fields='entrezgene,ensembl.gene,refseq,symbol,taxid', returnall=True)
+out = mg.querymany(data["UniProtID"], scopes='uniprot', fields='entrezgene,ensembl.gene,refseq,symbol,taxid', returnall=True)
 
 
 # In[136]:
