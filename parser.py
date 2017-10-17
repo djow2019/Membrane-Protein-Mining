@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[133]:
+# In[35]:
 
 # %load parser.py
 # import the panda, request, io, and mygene libraries
@@ -23,7 +23,7 @@ query = {
 r = requests.get("http://www.uniprot.org/uniprot/", params = query)
 
 
-# In[151]:
+# In[36]:
 
 # Simple expression to find annotation data
 def findAnnotation(text):
@@ -57,14 +57,14 @@ data["Type"] = data["Reference"].apply(lambda x: findType(x))
 data["Annotations"] = data["Reference"].apply(lambda x: findAnnotation(x))
 
 
-# In[135]:
+# In[37]:
 
 # now use mygene to add additional IDs
 mg = mygene.MyGeneInfo()
 out = mg.querymany(data["UniProtID"], scopes='uniprot', fields='entrezgene,ensembl.gene,refseq,symbol,taxid', returnall=True)
 
 
-# In[136]:
+# In[38]:
 
 def getTax(value):
     # Value might be not found, so treat as string
@@ -75,48 +75,70 @@ def getTax(value):
         return "Mouse"
     else:
         return "Unknown"
+    
+# change all values to mouse/human
+for entry in out["out"]:
+    if "taxid" in entry:
+        entry["taxid"] = getTax(entry["taxid"])
 
 
-# In[137]:
+# In[40]:
 
 #create a separate dictionary for duplicates
 duplicates = {}
 for k, v in out["dup"]:
     duplicates[k] = v
+    
+# create a list of all the duplicates
+dups = [entry for entry in out["out"] if entry["query"] in duplicates]
 
 # whether or not an entry is unique
-def isUnique(item):
+def isUnique(entry):
     
-    # iterate through list of duplicates
-    for k, v in duplicates.items():
-        if item == k:
-            if v > 1:
-                duplicates[k] = 1
-                return True
-            else:
-                return False
-    return True
+    # check if query is a duplicate
+    if entry["query"] in duplicates:
+        
+        #check if the duplicate has been merged
+        if duplicates[entry["query"]] > 1:
+            
+            # get a list of the current duplicates
+            entries = [dup for dup in dups if dup["query"] == entry["query"]]
+            
+            # now merge each category
+            entry["entrezgene"] = [item["entrezgene"] for item in entries if "entrezgene" in item]
+            entry["ensembl"] = [item["ensembl"] for item in entries if "ensembl" in item]
+            entry["refseq"] = [item["refseq"] for item in entries if "refseq" in item]
+            entry["symbol"] = [item["symbol"] for item in entries if "symbol" in item]
+            entry["taxid"] = [item["taxid"] for item in entries if "taxid" in item]
+            
+            # mark as merged
+            duplicates[entry["query"]] = 1
+            return True
+        else:
+            return False
+    else:
+        return True
 
 #filter out duplicates
-parsed = [entry for entry in  out["out"] if isUnique(entry["query"])]
+parsed = [entry for entry in  out["out"] if isUnique(entry)]
 
 
-# In[152]:
+# In[41]:
 
 data["EntrezID"] = pd.Series(map(lambda d: d.get('entrezgene', 'Not Found'), parsed))
 data["EnsemblID"] = pd.Series(map(lambda d: d.get('ensembl', 'Not Found'), parsed))
 data["RefSeqID"] = pd.Series(map(lambda d: d.get('refseq', 'Not Found'), parsed))
 data["Symbol"] = pd.Series(map(lambda d: d.get('symbol', 'Not Found'), parsed))
-data["TaxID"] = pd.Series(map(lambda d: getTax(d.get('taxid', 'Not Found')), parsed))
+data["TaxID"] = pd.Series(map(lambda d: d.get('taxid', 'Not Found'), parsed))
 
 
-# In[153]:
+# In[42]:
 
 # now write the table to a file
 data.to_csv("formatted.tab", index=False, header=True, sep="	")
 
 
-# In[154]:
+# In[43]:
 
 data
 
